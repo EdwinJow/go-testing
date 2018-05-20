@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+func add(x, y float32) float32 {
+	return x + y
+}
+
+func multiple(a, b string) (string, string) {
+	return a, b
+}
 
 func main() {
-	fmt.Println("Welcome to Go!")
+	w1, w2 := "Hey", "there"
+
+	fmt.Println(multiple(w1, w2))
 }
